@@ -2,7 +2,7 @@
 Sentiment Analysis of Real Time Data Streamed from Twitter passed through Kafka and Spark
 
 
-#Prerequisite: 
+# Prerequisite: 
 Twitter Developer Account
 Hadoop
 Zookeeper
@@ -14,7 +14,7 @@ twitter_kafka.py: Streams Data from Twitter and send data to the producer of the
 spark_model.py: Train a machine learning model on the datatset and save in Hadoop.
 kakfa_spark_ML.py: Loads the saved model and then Read data in real time from the Kafka producer and predict the Sentiment of the Tweet.
 
-#Process:
+# Process:
 Create Topic: bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic first_topic --create --partitions 3 --replication-factor 1
 Start Zookeeper: zookeeper-server-start.sh config/zookeeper.properties
 Start Kafka: bin/kafka-server-start.sh config/server.properties
